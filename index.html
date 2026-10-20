@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Antes de Nós</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500&family=Literata:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/livro.css">
+</head>
+<body>
+
+<header class="topo">
+  <p class="marca">
+    <span class="marca-estratos" aria-hidden="true">
+      <span style="--c:var(--c-hadeano);--t:540"></span><span style="--c:var(--c-arqueano);--t:1500"></span><span style="--c:var(--c-proterozoico);--t:1961"></span><span style="--c:var(--c-fanerozoico);--t:539"></span>
+    </span>
+    Antes de Nós
+  </p>
+  <div class="topo-acoes">
+    <button class="btn-mesa" id="btn-sumario" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+      Sumário
+    </button>
+    <button class="btn-mesa" id="btn-tela" type="button" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      <span class="rotulo-longo">Tela cheia</span>
+    </button>
+  </div>
+</header>
+
+<main class="palco">
+  <div class="livro-caixa">
+  <div id="livro">
+
+    <!-- 1 · CAPA -->
+    <div class="pagina pagina--capa" data-density="hard">
+      <svg class="arte" viewBox="0 0 460 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="cp-ceu" cx="50%" cy="70%" r="80%">
+            <stop offset="0" stop-color="#1a2a4c"/><stop offset=".5" stop-color="#0c1428"/><stop offset="1" stop-color="#05070e"/>
+          </radialGradient>
+          <radialGradient id="cp-oceano" cx="36%" cy="34%" r="78%">
+            <stop offset="0" stop-color="#4aa6cf"/><stop offset=".55" stop-color="#1d5e88"/><stop offset="1" stop-color="#0b2a45"/>
+          </radialGradient>
+          <linearGradient id="cp-noite" x1="0" y1="0" x2="1" y2=".35">
+            <stop offset=".42" stop-color="#030711" stop-opacity="0"/><stop offset="1" stop-color="#030711" stop-opacity=".82"/>
+          </linearGradient>
+          <radialGradient id="cp-halo" cx="50%" cy="50%" r="50%">
+            <stop offset=".74" stop-color="#78c4ff" stop-opacity="0"/><stop offset=".79" stop-color="#78c4ff" stop-opacity=".45"/><stop offset="1" stop-color="#78c4ff" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="cp-lua" cx="35%" cy="35%" r="70%">
+            <stop offset="0" stop-color="#f1efe8"/><stop offset="1" stop-color="#8d8f94"/>
+          </radialGradient>
+          <clipPath id="cp-disco"><circle cx="230" cy="452" r="112"/></clipPath>
+          <g id="cp-terras">
+            <path fill="#6f9f58" d="M110 380 C128 368 152 372 158 392 C163 410 146 420 150 438 C154 456 170 470 160 492 C152 510 134 514 126 498 C118 482 124 462 112 450 C100 438 92 420 96 402 C98 392 102 385 110 380 Z"/>
+            <path fill="#c4a865" d="M200 400 C214 388 238 390 252 398 C268 406 272 424 262 434 C254 442 240 438 232 448 C222 462 236 478 228 494 C220 508 204 504 198 490 C192 474 198 458 192 444 C186 430 188 410 200 400 Z"/>
+            <path fill="#7aa95f" d="M296 370 C318 358 350 362 368 378 C380 390 372 404 356 406 C340 408 332 418 338 432 C344 446 360 452 356 468 C352 482 334 486 322 474 C310 462 312 444 300 434 C288 424 280 404 286 388 C288 380 290 374 296 370 Z"/>
+            <path fill="#6f9f58" d="M160 528 C170 520 184 522 186 532 C188 542 176 548 166 546 C156 544 152 534 160 528 Z"/>
+            <path fill="#c4a865" d="M322 508 C332 500 348 504 350 514 C352 524 340 530 330 528 C320 526 314 516 322 508 Z"/>
+          </g>
+          <g id="cp-nuvem">
+            <path d="M96 420 C120 410 150 414 170 406" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none" opacity=".55"/>
+            <path d="M210 480 C240 472 270 478 300 470" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".5"/>
+            <path d="M250 372 C280 366 310 370 330 362" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none" opacity=".45"/>
+            <path d="M130 520 C150 514 176 518 196 512" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none" opacity=".45"/>
+          </g>
+        </defs>
+        <rect width="460" height="640" fill="url(#cp-ceu)"/>
+        <g data-estrelas="110" data-semente="7"></g>
+        <g class="cp-cometa">
+          <line x1="0" y1="0" x2="46" y2="-18" stroke="#fff" stroke-width="1.4" stroke-linecap="round" opacity=".8"/>
+          <circle r="1.8" fill="#fff"/>
+        </g>
+        <circle cx="230" cy="452" r="150" fill="url(#cp-halo)"/>
+        <g transform="rotate(-14 230 452)">
+          <ellipse cx="230" cy="452" rx="178" ry="42" fill="none" stroke="#c9d6ff" stroke-opacity=".28" stroke-dasharray="2 5"/>
+          <circle r="9" fill="url(#cp-lua)">
+            <animateMotion dur="16s" repeatCount="indefinite" path="M 408 452 A 178 42 0 0 1 52 452 A 178 42 0 0 1 408 452"/>
+            <animate attributeName="opacity" values="0;1" keyTimes="0;0.5" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+        <circle cx="230" cy="452" r="112" fill="url(#cp-oceano)"/>
+        <g clip-path="url(#cp-disco)">
+          <g class="cp-gira"><use href="#cp-terras"/><use href="#cp-terras" x="300"/></g>
+          <ellipse cx="230" cy="342" rx="60" ry="14" fill="#eef4f7" opacity=".9"/>
+          <ellipse cx="230" cy="563" rx="50" ry="11" fill="#eef4f7" opacity=".85"/>
+          <g class="cp-nuvens"><use href="#cp-nuvem"/><use href="#cp-nuvem" x="300"/></g>
+          <circle cx="230" cy="452" r="112" fill="url(#cp-noite)"/>
+        </g>
+        <circle cx="230" cy="452" r="112" fill="none" stroke="#a6e0ff" stroke-opacity=".45" stroke-width="1.5"/>
+        <g transform="rotate(-14 230 452)">
+          <circle r="9" fill="url(#cp-lua)">
+            <animateMotion dur="16s" repeatCount="indefinite" path="M 408 452 A 178 42 0 0 1 52 452 A 178 42 0 0 1 408 452"/>
+            <animate attributeName="opacity" values="1;0" keyTimes="0;0.5" calcMode="discrete" dur="16s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+      </svg>
+      <div class="capa-texto">
+        <p class="capa-sobre">Um livro interativo</p>
+        <h1 class="capa-titulo">Antes<br>de nós</h1>
+        <div class="estratos" aria-hidden="true">
+          <span style="--c:var(--c-hadeano);--t:540"></span><span style="--c:var(--c-arqueano);--t:1500"></span><span style="--c:var(--c-proterozoico);--t:1961"></span><span style="--c:var(--c-fanerozoico);--t:539"></span>
+        </div>
+        <p class="capa-legenda" aria-hidden="true"><span>4,54 bi</span><span>hoje</span></p>
+        <p class="capa-pe">13,8 bilhões de anos em 12 capítulos</p>
+      </div>
+    </div>
+
+    <!-- 2 · COMO LER -->
+    <div class="pagina pagina--papel era-cosmos">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Antes de começar</p>
+        <h2 class="titulo">Como ler este livro</h2>
+        <p class="intro">Este livro conta a história de tudo: do começo do Universo até o surgimento da nossa espécie. São 13,8 bilhões de anos em 12 capítulos.</p>
+        <ul class="dicas">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/></svg>
+            <div><b>Vire as páginas</b> puxando o canto, deslizando o dedo ou usando as setas abaixo do livro e do teclado.</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3" fill="currentColor"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="10.5" opacity=".45"/></svg>
+            <div><b>Toque nos pontos que pulsam.</b> Eles revelam curiosidades escondidas nas ilustrações.</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 12h18"/><circle cx="9" cy="12" r="3.2" fill="currentColor"/></svg>
+            <div><b>Mexa nos controles.</b> Botões e réguas fazem as cenas mudarem com o tempo.</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+            <div><b>Teste o que aprendeu</b> no quiz do fim do livro.</div>
+          </li>
+        </ul>
+        <div class="legenda-eras">
+          <p class="legenda-titulo">Cada capítulo tem a cor da sua era</p>
+          <ul>
+            <li style="--c:var(--c-cosmos)">Cosmos</li>
+            <li style="--c:var(--c-hadeano)">Hadeano</li>
+            <li style="--c:var(--c-arqueano)">Arqueano</li>
+            <li style="--c:var(--c-proterozoico)">Proterozoico</li>
+            <li style="--c:var(--c-paleozoico)">Paleozoico</li>
+            <li style="--c:var(--c-mesozoico)">Mesozoico</li>
+            <li style="--c:var(--c-cenozoico)">Cenozoico</li>
+          </ul>
+        </div>
+        <footer class="rodape"><span>2</span><span>Antes de Nós</span></footer>
+      </div>
+    </div>
+
+    <!-- 3 · SUMÁRIO -->
+    <div class="pagina pagina--papel era-cosmos">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Índice</p>
+        <h2 class="titulo">Sumário</h2>
+        <ol class="sumario">
+          <li><button class="sum-item" type="button" data-ir="5" style="--c:var(--c-cosmos)"><span class="sum-n">01</span><span class="sum-cor"></span><span class="sum-t">O Big Bang <span class="sum-ler">ler</span></span><span class="sum-d">13,8 bi</span></button></li>
+          <li><button class="sum-item" type="button" data-ir="7" style="--c:var(--c-hadeano)"><span class="sum-n">02</span><span class="sum-cor"></span><span class="sum-t">Nasce a Terra <span class="sum-ler">ler</span></span><span class="sum-d">4,54 bi</span></button></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-arqueano)"><span class="sum-n">03</span><span class="sum-cor"></span><span class="sum-t">A primeira vida</span><span class="sum-d">4,0 bi</span></div></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-proterozoico)"><span class="sum-n">04</span><span class="sum-cor"></span><span class="sum-t">O planeta ganha oxigênio</span><span class="sum-d">2,5 bi</span></div></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-paleozoico)"><span class="sum-n">05</span><span class="sum-cor"></span><span class="sum-t">A Explosão Cambriana</span><span class="sum-d">539 mi</span></div></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-paleozoico)"><span class="sum-n">06</span><span class="sum-cor"></span><span class="sum-t">Peixes, plantas e terra firme</span><span class="sum-d">485 mi</span></div></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-paleozoico)"><span class="sum-n">07</span><span class="sum-cor"></span><span class="sum-t">Florestas gigantes</span><span class="sum-d">359 mi</span></div></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-paleozoico)"><span class="sum-n">08</span><span class="sum-cor"></span><span class="sum-t">A Grande Extinção</span><span class="sum-d">252 mi</span></div></li>
+          <li><button class="sum-item" type="button" data-ir="9" style="--c:var(--c-mesozoico)"><span class="sum-n">09</span><span class="sum-cor"></span><span class="sum-t">A era dos dinossauros <span class="sum-ler">ler</span></span><span class="sum-d">233 mi</span></button></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-mesozoico)"><span class="sum-n">10</span><span class="sum-cor"></span><span class="sum-t">O asteroide</span><span class="sum-d">66 mi</span></div></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-cenozoico)"><span class="sum-n">11</span><span class="sum-cor"></span><span class="sum-t">A era dos mamíferos</span><span class="sum-d">66 mi</span></div></li>
+          <li class="sum-breve"><div class="sum-item" style="--c:var(--c-cenozoico)"><span class="sum-n">12</span><span class="sum-cor"></span><span class="sum-t">Os humanos</span><span class="sum-d">7 mi</span></div></li>
+        </ol>
+        <footer class="rodape"><span>3</span><span>Capítulos em cinza chegam em breve</span></footer>
+      </div>
+    </div>
+
+    <!-- 4 · PILHA DO TEMPO -->
+    <div class="pagina pagina--papel era-fanerozoico">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Escala do tempo · 1</p>
+        <h2 class="titulo">A pilha do tempo</h2>
+        <p class="intro">Os geólogos dividem o passado em <b>éons</b>, os maiores blocos de tempo, com centenas de milhões ou bilhões de anos cada. Cada éon se divide em <b>eras</b>, e cada era em <b>períodos</b>, como o Jurássico.</p>
+        <p class="intro intro--dica">Nesta pilha, como nas rochas, o mais antigo fica embaixo. Toque numa camada.</p>
+        <div class="pilha">
+          <span class="pilha-cab" style="left:0">Éons · hoje</span>
+          <span class="pilha-cab" style="left:57%">Eras · hoje</span>
+          <span class="pilha-cab pilha-cab--base" style="left:0">há 4,54 bilhões de anos</span>
+          <span class="pilha-cab pilha-cab--base" style="left:57%">há 539 milhões</span>
+          <div class="pilha-col pilha-col--eons">
+            <button class="camada" type="button" data-camada="fanerozoico" style="--c:var(--c-fanerozoico);--t:539"><span class="camada-rot"><b>Fanerozoico</b><i>539 mi – hoje</i></span></button>
+            <button class="camada" type="button" data-camada="proterozoico" style="--c:var(--c-proterozoico);--t:1961"><span class="camada-rot"><b>Proterozoico</b><i>2,5 bi – 539 mi</i></span></button>
+            <button class="camada" type="button" data-camada="arqueano" style="--c:var(--c-arqueano);--t:1500"><span class="camada-rot"><b>Arqueano</b><i>4,0 – 2,5 bi</i></span></button>
+            <button class="camada" type="button" data-camada="hadeano" style="--c:var(--c-hadeano);--t:540"><span class="camada-rot"><b>Hadeano</b><i>4,54 – 4,0 bi</i></span></button>
+          </div>
+          <svg class="pilha-zoom" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M66 0 H100"/>
+            <path d="M66 11.9 H72 L100 100"/>
+          </svg>
+          <div class="pilha-col pilha-col--eras">
+            <button class="camada" type="button" data-camada="cenozoico" style="--c:var(--c-cenozoico);--t:66"><span class="camada-rot"><b>Cenozoico</b><i>66 mi – hoje</i></span></button>
+            <button class="camada" type="button" data-camada="mesozoico" style="--c:var(--c-mesozoico);--t:186"><span class="camada-rot"><b>Mesozoico</b><i>252 – 66 mi</i></span></button>
+            <button class="camada" type="button" data-camada="paleozoico" style="--c:var(--c-paleozoico);--t:287"><span class="camada-rot"><b>Paleozoico</b><i>539 – 252 mi</i></span></button>
+          </div>
+        </div>
+        <div class="cartao" id="cartao-camada" aria-live="polite"></div>
+        <footer class="rodape"><span>4</span><span>Alturas em escala</span></footer>
+      </div>
+    </div>
+
+    <!-- 5 · ANO CÓSMICO -->
+    <div class="pagina pagina--papel era-cosmos">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Escala do tempo · 2</p>
+        <h2 class="titulo">O ano cósmico</h2>
+        <p class="intro">Se os 13,8 bilhões de anos do Universo coubessem em um ano, cada dia valeria uns 38 milhões de anos. Escolha um acontecimento:</p>
+        <div class="cal">
+          <div class="faixa-rot"><span>O ano inteiro</span></div>
+          <div class="faixa" id="faixa-ano">
+            <span style="--t:31"></span><span style="--t:28"></span><span style="--t:31"></span><span style="--t:30"></span><span style="--t:31"></span><span style="--t:30"></span><span style="--t:31"></span><span style="--t:31"></span><span style="--t:30"></span><span style="--t:31"></span><span style="--t:30"></span><span style="--t:31" class="realce"></span>
+            <div class="faixa-marcas"></div>
+          </div>
+          <div class="faixa-escala faixa-escala--meses"><span style="--t:31">jan</span><span style="--t:28">fev</span><span style="--t:31">mar</span><span style="--t:30">abr</span><span style="--t:31">mai</span><span style="--t:30">jun</span><span style="--t:31">jul</span><span style="--t:31">ago</span><span style="--t:30">set</span><span style="--t:31">out</span><span style="--t:30">nov</span><span style="--t:31">dez</span></div>
+          <svg class="cal-zoom" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M91.5 0 L0 10"/><path d="M100 0 L100 10"/></svg>
+          <div class="faixa-rot"><span>Dezembro</span></div>
+          <div class="faixa" id="faixa-dez"><div class="faixa-marcas"></div></div>
+          <div class="faixa-escala"><span>1º</span><span>31</span></div>
+          <svg class="cal-zoom" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M96.8 0 L0 10"/><path d="M100 0 L100 10"/></svg>
+          <div class="faixa-rot"><span>31 de dezembro</span></div>
+          <div class="faixa" id="faixa-dia"><div class="faixa-marcas"></div></div>
+          <div class="faixa-escala"><span>0h</span><span>6h</span><span>12h</span><span>18h</span><span>24h</span></div>
+        </div>
+        <div class="chips" id="chips-eventos"></div>
+        <div class="cartao" id="cartao-evento" aria-live="polite"></div>
+        <footer class="rodape"><span>5</span><span>Escala de Carl Sagan, atualizada</span></footer>
+      </div>
+    </div>
+
+    <!-- 6 · BIG BANG (ilustração) -->
+    <div class="pagina pagina--escura pag-bb era-cosmos">
+      <svg class="arte bb" id="bb" viewBox="0 0 460 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="bb-fundo" cx="50%" cy="47%" r="72%">
+            <stop offset="0" stop-color="#2a1640"/><stop offset=".5" stop-color="#110b22"/><stop offset="1" stop-color="#05040b"/>
+          </radialGradient>
+          <radialGradient id="bb-luz">
+            <stop offset="0" stop-color="#fff"/><stop offset=".22" stop-color="#fff3c4"/><stop offset=".45" stop-color="#ffb347"/><stop offset=".7" stop-color="#e2456b" stop-opacity=".55"/><stop offset="1" stop-color="#7a2fd0" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="bb-gal">
+            <stop offset="0" stop-color="#fff6dc"/><stop offset=".4" stop-color="#c9b6ff" stop-opacity=".6"/><stop offset="1" stop-color="#8f7bff" stop-opacity="0"/>
+          </radialGradient>
+          <g id="bb-espiral">
+            <circle r="16" fill="url(#bb-gal)"/>
+            <path d="M0 0 C5 -7 15 -6 17 2 C18 8 13 12 8 12" fill="none" stroke="#d9cbff" stroke-width="2.2" stroke-linecap="round" opacity=".85"/>
+            <path d="M0 0 C-5 7 -15 6 -17 -2 C-18 -8 -13 -12 -8 -12" fill="none" stroke="#d9cbff" stroke-width="2.2" stroke-linecap="round" opacity=".85"/>
+            <circle r="2.6" fill="#fff"/>
+          </g>
+        </defs>
+        <rect width="460" height="640" fill="url(#bb-fundo)"/>
+        <g data-estrelas="70" data-semente="3"></g>
+        <g>
+          <circle class="bb-anel" cx="230" cy="300" r="100" stroke="#ffd27a" style="--del:.1s"/>
+          <circle class="bb-anel" cx="230" cy="300" r="100" stroke="#f2557a" style="--del:.35s"/>
+          <circle class="bb-anel" cx="230" cy="300" r="100" stroke="#a98bff" style="--del:.65s"/>
+          <circle class="bb-anel" cx="230" cy="300" r="100" stroke="#7fd6ff" style="--del:1s"/>
+        </g>
+        <g class="bb-particulas"></g>
+        <g>
+          <g class="bb-galaxia" style="--del:2.3s" transform="translate(76 318) rotate(-25) scale(1.1 .55)"><g class="bb-gira"><use href="#bb-espiral"/></g></g>
+          <g class="bb-galaxia" style="--del:2.6s" transform="translate(372 214) rotate(20) scale(.8 .45)"><g class="bb-gira"><use href="#bb-espiral"/></g></g>
+          <g class="bb-galaxia" style="--del:2.9s" transform="translate(104 452) rotate(10) scale(.9 .6)"><g class="bb-gira"><use href="#bb-espiral"/></g></g>
+          <g class="bb-galaxia" style="--del:3.1s" transform="translate(366 440) rotate(-35) scale(1.25 .6)"><g class="bb-gira"><use href="#bb-espiral"/></g></g>
+          <g class="bb-galaxia" style="--del:3.4s" transform="translate(250 520) rotate(5) scale(.6 .35)"><g class="bb-gira"><use href="#bb-espiral"/></g></g>
+          <g class="bb-galaxia" style="--del:3.6s" transform="translate(300 140) rotate(-10) scale(.55 .32)"><g class="bb-gira"><use href="#bb-espiral"/></g></g>
+        </g>
+        <circle class="bb-nucleo" cx="230" cy="300" r="78" fill="url(#bb-luz)"/>
+      </svg>
+      <div class="pagina-conteudo">
+        <div class="arte-texto">
+          <p class="cabeca-cap cabeca-cap--clara">Capítulo 1</p>
+          <h2 class="titulo titulo--claro">O Big Bang</h2>
+          <p class="data-tag">há 13,8 bilhões de anos</p>
+        </div>
+        <div class="arte-base">
+          <p>Do minúsculo ao imenso: o espaço se estica e a matéria se espalha, esfria e forma as primeiras estrelas e galáxias.</p>
+          <button class="btn-livro btn-livro--claro" id="bb-repetir" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4h4"/></svg>
+            <span>Ver de novo</span>
+          </button>
+          <footer class="rodape rodape--claro" style="align-self:stretch"><span>6</span><span>Ilustração fora de escala</span></footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 · BIG BANG (texto) -->
+    <div class="pagina pagina--papel era-cosmos">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Capítulo 1 · O Big Bang</p>
+        <h2 class="titulo">Tudo começou quente e minúsculo</h2>
+        <p>Há cerca de 13,8 bilhões de anos, tudo o que existe estava concentrado num estado extremamente quente e denso. Desde então, o Universo não para de se expandir e esfriar.</p>
+        <div class="mito-fato">
+          <p><span class="mf-rot mf-rot--mito">Mito</span><span>Foi uma explosão num ponto do espaço.</span></p>
+          <p><span class="mf-rot mf-rot--fato">Fato</span><span>O próprio espaço começou a se esticar, em todo lugar ao mesmo tempo.</span></p>
+        </div>
+        <div class="passos">
+          <p class="subtitulo">Depois do começo</p>
+          <div class="passos-abas" role="tablist" aria-label="Momentos depois do Big Bang">
+            <button type="button" role="tab" data-passo="0" aria-selected="true">3 minutos</button>
+            <button type="button" role="tab" data-passo="1" aria-selected="false">380 mil anos</button>
+            <button type="button" role="tab" data-passo="2" aria-selected="false">200 milhões</button>
+            <button type="button" role="tab" data-passo="3" aria-selected="false">9,2 bilhões</button>
+          </div>
+          <p class="passos-texto" id="bb-passo" role="tabpanel" aria-live="polite"></p>
+        </div>
+        <aside class="etiqueta" data-rotulo="Você sabia?">
+          <p>O carbono do seu corpo, o oxigênio que você respira e o ferro do seu sangue foram forjados dentro de estrelas que morreram antes de o Sol nascer. Você é feito de poeira de estrelas.</p>
+        </aside>
+        <footer class="rodape"><span>7</span><span>O Big Bang</span></footer>
+      </div>
+    </div>
+
+    <!-- 8 · NASCE A TERRA (ilustração interativa) -->
+    <div class="pagina pagina--escura pag-terra era-hadeano">
+      <svg class="terra-cena" id="terra-cena" viewBox="0 0 460 440" aria-hidden="true">
+        <defs>
+          <radialGradient id="tr-ceu" cx="50%" cy="55%" r="70%">
+            <stop offset="0" stop-color="#1b1830"/><stop offset="1" stop-color="#080b14"/>
+          </radialGradient>
+          <linearGradient id="tr-fade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset=".72" stop-color="#080b14" stop-opacity="0"/><stop offset="1" stop-color="#080b14"/>
+          </linearGradient>
+          <radialGradient id="tr-sol">
+            <stop offset="0" stop-color="#fffbe8"/><stop offset=".3" stop-color="#ffe08a"/><stop offset=".62" stop-color="#ff9d3c" stop-opacity=".45"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="tr-lava" cx="40%" cy="38%" r="70%">
+            <stop offset="0" stop-color="#ffd27a"/><stop offset=".45" stop-color="#f07a2a"/><stop offset="1" stop-color="#8a1f0e"/>
+          </radialGradient>
+          <radialGradient id="tr-lava-brilho">
+            <stop offset=".62" stop-color="#ff7a2a" stop-opacity=".6"/><stop offset="1" stop-color="#ff7a2a" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="tr-oceano" cx="38%" cy="36%" r="75%">
+            <stop offset="0" stop-color="#3f93c0"/><stop offset=".6" stop-color="#1a557f"/><stop offset="1" stop-color="#0a2740"/>
+          </radialGradient>
+          <radialGradient id="tr-atm">
+            <stop offset=".78" stop-color="#8fd0ff" stop-opacity="0"/><stop offset=".83" stop-color="#8fd0ff" stop-opacity=".45"/><stop offset="1" stop-color="#8fd0ff" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="tr-noite" x1="0" y1="0" x2="1" y2=".3">
+            <stop offset=".45" stop-color="#05070d" stop-opacity="0"/><stop offset="1" stop-color="#05070d" stop-opacity=".78"/>
+          </linearGradient>
+          <radialGradient id="tr-theia" cx="35%" cy="35%" r="70%">
+            <stop offset="0" stop-color="#cdb59c"/><stop offset="1" stop-color="#57443a"/>
+          </radialGradient>
+          <radialGradient id="tr-lua" cx="35%" cy="35%" r="70%">
+            <stop offset="0" stop-color="#eeece6"/><stop offset="1" stop-color="#7f8287"/>
+          </radialGradient>
+          <linearGradient id="tr-rastro" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#fff4d6"/><stop offset="1" stop-color="#ff9d3c" stop-opacity="0"/>
+          </linearGradient>
+          <clipPath id="tr-disco"><circle cx="230" cy="240" r="118"/></clipPath>
+        </defs>
+        <rect width="460" height="440" fill="url(#tr-ceu)"/>
+        <g data-estrelas="70" data-semente="11" data-h="440"></g>
+
+        <!-- etapa 0: disco de poeira -->
+        <g class="estagio" data-etapas="0">
+          <g transform="translate(230 240) rotate(-14)">
+            <ellipse class="poeira p1" rx="205" ry="60" stroke="#a87b55" stroke-opacity=".4" stroke-width="11" stroke-dasharray="1 9"/>
+            <ellipse class="poeira p2" rx="158" ry="46" stroke="#d29a63" stroke-opacity=".5" stroke-width="8" stroke-dasharray="1 7"/>
+            <ellipse class="poeira p3" rx="112" ry="33" stroke="#eebd84" stroke-opacity=".6" stroke-width="6" stroke-dasharray="1 6"/>
+            <ellipse class="poeira p4" rx="72" ry="21" stroke="#ffd9a0" stroke-opacity=".65" stroke-width="5" stroke-dasharray="1 6"/>
+            <circle r="5" fill="#c79a74"><animateMotion dur="14s" repeatCount="indefinite" path="M 158 0 A 158 46 0 1 1 -158 0 A 158 46 0 1 1 158 0"/></circle>
+            <circle r="3.5" fill="#e0b38a"><animateMotion dur="9s" begin="-4s" repeatCount="indefinite" path="M 112 0 A 112 33 0 1 1 -112 0 A 112 33 0 1 1 112 0"/></circle>
+            <circle r="6.5" fill="#9c7458"><animateMotion dur="22s" begin="-9s" repeatCount="indefinite" path="M 205 0 A 205 60 0 1 1 -205 0 A 205 60 0 1 1 205 0"/></circle>
+            <circle r="3" fill="#f2c99a"><animateMotion dur="6s" begin="-2s" repeatCount="indefinite" path="M 72 0 A 72 21 0 1 1 -72 0 A 72 21 0 1 1 72 0"/></circle>
+          </g>
+          <circle cx="230" cy="240" r="70" fill="url(#tr-sol)"/>
+          <circle cx="230" cy="240" r="17" fill="#fff6d2"/>
+        </g>
+
+        <!-- etapas 1 e 2: bola de lava -->
+        <g class="estagio" data-etapas="1 2">
+          <circle class="lava-brilho" cx="230" cy="240" r="160" fill="url(#tr-lava-brilho)"/>
+          <circle cx="230" cy="240" r="118" fill="url(#tr-lava)"/>
+          <g clip-path="url(#tr-disco)">
+            <g fill="#3a1e17" stroke="#3a1e17" stroke-width="2" stroke-linejoin="round">
+              <polygon points="140,170 190,140 225,150 215,195 170,210 135,200"/>
+              <polygon points="235,135 290,140 320,175 290,195 245,185"/>
+              <polygon points="300,205 340,215 345,260 315,280 292,250"/>
+              <polygon points="160,225 210,215 240,240 225,285 175,290 140,260"/>
+              <polygon points="252,206 284,216 280,255 252,268 240,240"/>
+              <polygon points="190,302 240,300 268,320 240,345 185,335"/>
+              <polygon points="292,292 332,288 316,326 284,318"/>
+              <polygon points="112,212 148,232 132,262 108,252"/>
+            </g>
+            <circle cx="230" cy="240" r="118" fill="url(#tr-noite)"/>
+          </g>
+        </g>
+        <g class="estagio" data-etapas="1">
+          <g transform="translate(306 150)">
+            <g class="meteoro-voo" style="--d:0s"><line x1="0" y1="0" x2="34" y2="-34" stroke="url(#tr-rastro)" stroke-width="2.4" stroke-linecap="round"/><circle r="2.6" fill="#fff4d6"/></g>
+            <circle class="impacto" r="6" fill="#fff1c0" style="--d:0s"/>
+          </g>
+          <g transform="translate(341 200)">
+            <g class="meteoro-voo" style="--d:1.3s"><line x1="0" y1="0" x2="30" y2="-30" stroke="url(#tr-rastro)" stroke-width="2" stroke-linecap="round"/><circle r="2.2" fill="#fff4d6"/></g>
+            <circle class="impacto" r="5" fill="#fff1c0" style="--d:1.3s"/>
+          </g>
+          <g transform="translate(251 124)">
+            <g class="meteoro-voo" style="--d:2.4s"><line x1="0" y1="0" x2="26" y2="-26" stroke="url(#tr-rastro)" stroke-width="1.8" stroke-linecap="round"/><circle r="2" fill="#fff4d6"/></g>
+            <circle class="impacto" r="4.5" fill="#fff1c0" style="--d:2.4s"/>
+          </g>
+        </g>
+
+        <!-- etapa 2: Theia -->
+        <g class="estagio theia-cena" data-etapas="2">
+          <g class="detritos">
+            <g transform="translate(230 240) rotate(-16)">
+              <ellipse rx="175" ry="44" fill="none" stroke="#e8c8a8" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 9"/>
+              <ellipse rx="160" ry="38" fill="none" stroke="#c99a78" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="0.1 7"/>
+            </g>
+          </g>
+          <circle class="theia" cx="125" cy="135" r="50" fill="url(#tr-theia)"/>
+          <circle class="clarao" cx="147" cy="157" r="26" fill="#fff8e6"/>
+          <g class="lua-nova">
+            <circle cx="384" cy="180" r="20" fill="url(#tr-lua)"/>
+          </g>
+        </g>
+
+        <!-- etapa 3: oceanos -->
+        <g class="estagio" data-etapas="3">
+          <circle cx="230" cy="240" r="150" fill="url(#tr-atm)"/>
+          <circle cx="230" cy="240" r="118" fill="url(#tr-oceano)"/>
+          <g clip-path="url(#tr-disco)">
+            <g fill="#6b5b50">
+              <path d="M150 200 C165 188 190 192 196 206 C202 220 186 230 172 228 C158 226 140 214 150 200 Z"/>
+              <path d="M250 170 C266 162 290 168 292 182 C294 194 278 198 266 194 C254 190 240 180 250 170 Z"/>
+              <path d="M270 260 C288 250 312 258 312 276 C312 292 294 300 278 294 C262 288 256 270 270 260 Z"/>
+              <path d="M180 290 C192 284 208 290 206 302 C204 312 190 314 182 308 C174 302 172 294 180 290 Z"/>
+            </g>
+            <g fill="#ff8a3d">
+              <circle class="vulcao" cx="176" cy="210" r="2.6"/>
+              <circle class="vulcao" cx="281" cy="277" r="2.6" style="animation-delay:-.7s"/>
+              <circle class="vulcao" cx="270" cy="180" r="2.2" style="animation-delay:-1.2s"/>
+            </g>
+            <g class="nuvens-vagam" fill="none" stroke="#fff" stroke-linecap="round">
+              <path d="M110 250 C140 240 180 246 205 238" stroke-width="7" opacity=".6"/>
+              <path d="M225 305 C255 297 295 305 330 295" stroke-width="6" opacity=".55"/>
+              <path d="M195 150 C225 140 265 146 300 138" stroke-width="5" opacity=".5"/>
+              <path d="M140 330 C165 324 190 328 210 322" stroke-width="5" opacity=".45"/>
+              <path d="M300 220 C320 214 338 218 350 212" stroke-width="4" opacity=".5"/>
+            </g>
+            <circle cx="230" cy="240" r="118" fill="url(#tr-noite)"/>
+          </g>
+          <circle cx="380" cy="100" r="34" fill="url(#tr-lua)"/>
+          <g fill="#6f7277" opacity=".55">
+            <circle cx="370" cy="92" r="6"/><circle cx="390" cy="112" r="4.5"/><circle cx="386" cy="86" r="3"/><circle cx="366" cy="112" r="3.5"/>
+          </g>
+        </g>
+        <rect width="460" height="440" fill="url(#tr-fade)"/>
+      </svg>
+      <div class="pagina-conteudo">
+        <div class="arte-texto">
+          <p class="cabeca-cap cabeca-cap--clara">Capítulo 2</p>
+          <h2 class="titulo titulo--claro">Nasce a Terra</h2>
+        </div>
+        <div class="terra-painel">
+          <p class="terra-quando" id="terra-quando"></p>
+          <h3 class="terra-titulo" id="terra-titulo"></h3>
+          <p class="terra-desc" id="terra-desc" aria-live="polite"></p>
+          <div class="terra-controle">
+            <button class="btn-livro btn-livro--claro" id="terra-play" type="button" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>
+              <span>Animar</span>
+            </button>
+            <input type="range" id="terra-etapa" min="0" max="3" step="1" value="0" aria-label="Etapa da formação da Terra">
+          </div>
+          <div class="terra-marcas">
+            <button type="button" data-etapa="0">Poeira</button>
+            <button type="button" data-etapa="1">Lava</button>
+            <button type="button" data-etapa="2">Theia</button>
+            <button type="button" data-etapa="3">Oceanos</button>
+          </div>
+          <footer class="rodape rodape--claro"><span>8</span><span>Ilustração fora de escala</span></footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9 · NASCE A TERRA (texto) -->
+    <div class="pagina pagina--papel era-hadeano">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Capítulo 2 · Nasce a Terra</p>
+        <h2 class="titulo">Um planeta feito de sobras</h2>
+        <p>O Sol e os planetas nasceram da mesma nuvem de gás e poeira. Grãos se grudaram em pedrinhas, pedrinhas em rochas, rochas em planetas. Foi assim que a Terra se formou, há 4,54 bilhões de anos.</p>
+        <p class="subtitulo">Por que “Hadeano”?</p>
+        <p>O primeiro éon da Terra leva o nome de Hades, o deus grego do mundo subterrâneo. Faz sentido: havia oceanos de lava, vulcões por toda parte e meteoros caindo sem parar.</p>
+        <div class="dados">
+          <div class="dado"><b>4,54 bi</b><span>anos: a idade da Terra, medida em meteoritos</span></div>
+          <div class="dado"><b>4,4 bi</b><span>anos: os cristais mais antigos, achados na Austrália</span></div>
+          <div class="dado"><b>3,8 cm</b><span>por ano: quanto a Lua se afasta de nós</span></div>
+        </div>
+        <aside class="etiqueta" data-rotulo="Você sabia?">
+          <p>A Lua nasceu muito mais perto e parecia enorme no céu. Desde então ela se afasta, e os dias, que eram bem mais curtos, foram ficando mais longos.</p>
+        </aside>
+        <footer class="rodape"><span>9</span><span>Nasce a Terra</span></footer>
+      </div>
+    </div>
+
+    <!-- 10 · T. REX (ilustração interativa) -->
+    <div class="pagina pagina--papel era-mesozoico">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Capítulo 9 · A era dos dinossauros</p>
+        <h2 class="titulo">O rei tirano</h2>
+        <div class="cena-moldura" id="trex-moldura">
+          <svg class="cena-trex" id="cena-trex" viewBox="0 0 400 290" role="group" aria-label="Ilustração de um Tyrannosaurus rex com pontos para tocar">
+            <defs>
+              <linearGradient id="tx-ceu" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#34586a"/><stop offset=".6" stop-color="#c88e6a"/><stop offset="1" stop-color="#f0c27a"/>
+              </linearGradient>
+              <clipPath id="tx-corpo-clip">
+                <path d="M118 130 C140 118 160 113 178 114 C205 116 232 121 252 128 C266 132 276 136 286 136 C294 128 300 118 310 110 L322 136 C312 146 300 156 292 168 C284 184 264 196 238 198 C214 199 196 192 182 186 C160 176 140 168 118 165 C108 158 108 138 118 130 Z"/>
+              </clipPath>
+              <clipPath id="tx-cauda-clip">
+                <path d="M22 150 C55 140 92 130 128 126 L150 126 L150 168 L122 166 C88 162 55 157 22 152 Z"/>
+              </clipPath>
+            </defs>
+            <rect width="400" height="290" fill="url(#tx-ceu)"/>
+            <circle cx="240" cy="216" r="20" fill="#ffe2a8" opacity=".9"/>
+            <!-- pterossauros (répteis voadores, não dinossauros) -->
+            <g fill="none" stroke="#2c3a3f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="translate(150 46)"><path class="asa" d="M-11 0 Q-5 -5 0 0 Q5 -5 11 0"/></g>
+              <g transform="translate(186 62) scale(.75)"><path class="asa" d="M-11 0 Q-5 -5 0 0 Q5 -5 11 0" style="animation-delay:-.4s"/></g>
+            </g>
+            <path d="M0 232 L30 214 L62 218 L104 172 L114 166 L128 166 L140 176 L178 212 L222 204 L262 190 L300 206 L344 196 L400 214 L400 290 L0 290 Z" fill="#6c6670" opacity=".75"/>
+            <path d="M0 240 L48 228 L90 236 L150 226 L210 236 L270 226 L330 236 L400 228 L400 290 L0 290 Z" fill="#59606a" opacity=".6"/>
+            <!-- plantas -->
+            <g fill="#3d4f40">
+              <rect x="48" y="150" width="4" height="100"/>
+              <path d="M50 120 L36 150 L64 150 Z M50 136 L30 172 L70 172 Z M50 156 L26 196 L74 196 Z M50 178 L22 220 L78 220 Z"/>
+              <rect x="378" y="176" width="3.5" height="76"/>
+              <path d="M380 150 L368 176 L392 176 Z M380 164 L362 196 L398 196 Z M380 182 L358 218 L402 218 Z"/>
+              <path d="M240 252 C236 236 226 228 214 226 M240 252 C240 234 236 222 232 214 M240 252 C244 234 252 224 262 220 M240 252 C248 238 260 234 270 236" stroke="#3d4f40" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </g>
+            <path d="M0 252 C80 246 160 258 240 252 C300 248 360 256 400 252 L400 290 L0 290 Z" fill="#8a7350"/>
+            <path d="M0 270 C90 266 190 274 280 268 C330 265 370 270 400 268 L400 290 L0 290 Z" fill="#735e42"/>
+
+            <!-- T. rex -->
+            <g class="trex">
+              <!-- perna e braço de trás -->
+              <g fill="#47532d" transform="translate(-30 2)">
+                <path d="M142 150 C146 126 196 124 204 150 C208 168 204 190 196 204 C190 214 174 216 168 206 C158 190 140 174 142 150 Z"/>
+                <path d="M176 196 C190 198 198 208 192 220 L182 240 C178 247 166 246 166 238 L172 214 C173 206 174 200 176 196 Z"/>
+                <path d="M166 236 C170 230 180 232 182 240 L198 256 C202 260 200 264 195 264 L170 264 C163 264 161 256 164 248 Z"/>
+                <path d="M184 256 L204 260 C208 261 208 266 204 266 L180 266 Z"/>
+              </g>
+              <path d="M271 174 L280 186 L288 183" fill="none" stroke="#47532d" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- cauda -->
+              <g class="trex-cauda">
+                <path d="M22 150 C55 140 92 130 128 126 L150 126 L150 168 L122 166 C88 162 55 157 22 152 Z" fill="#5c6b3c"/>
+                <g clip-path="url(#tx-cauda-clip)" fill="#3d4728">
+                  <path d="M58 120 L67 120 L62 150 Z"/><path d="M83 116 L92 116 L87 145 Z"/><path d="M108 112 L117 112 L112 141 Z"/>
+                  <path d="M20 156 C60 160 100 166 130 168 L130 175 L20 175 Z" fill="#cdbb8b"/>
+                </g>
+              </g>
+              <!-- corpo -->
+              <path d="M118 130 C140 118 160 113 178 114 C205 116 232 121 252 128 C266 132 276 136 286 136 C294 128 300 118 310 110 L322 136 C312 146 300 156 292 168 C284 184 264 196 238 198 C214 199 196 192 182 186 C160 176 140 168 118 165 C108 158 108 138 118 130 Z" fill="#5c6b3c"/>
+              <g clip-path="url(#tx-corpo-clip)">
+                <path d="M100 162 C150 166 200 184 240 186 C268 186 288 170 300 140 L330 140 L330 220 L90 220 Z" fill="#cdbb8b"/>
+                <g fill="#3d4728">
+                  <path d="M136 100 L146 100 L140 136 Z"/><path d="M166 100 L176 100 L170 131 Z"/><path d="M196 100 L206 100 L200 131 Z"/>
+                  <path d="M224 100 L234 100 L228 135 Z"/><path d="M251 100 L261 100 L255 142 Z"/><path d="M276 104 L285 104 L281 146 Z"/>
+                </g>
+              </g>
+              <!-- perna da frente -->
+              <g fill="#5c6b3c">
+                <path d="M142 150 C146 126 196 124 204 150 C208 168 204 190 196 204 C190 214 174 216 168 206 C158 190 140 174 142 150 Z"/>
+                <path d="M176 196 C190 198 198 208 192 220 L182 240 C178 247 166 246 166 238 L172 214 C173 206 174 200 176 196 Z"/>
+                <path d="M166 236 C170 230 180 232 182 240 L198 256 C202 260 200 264 195 264 L170 264 C163 264 161 256 164 248 Z"/>
+                <path d="M184 256 L204 260 C208 261 208 266 204 266 L180 266 Z"/>
+                <path d="M205 260.5 L212 263.5 L205 266 Z" fill="#e8dcc0"/>
+              </g>
+              <path d="M150 140 C160 132 178 130 190 138" fill="none" stroke="#6f7f4b" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+              <!-- braço da frente -->
+              <path d="M276 172 L286 184 L295 181" fill="none" stroke="#5c6b3c" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M295 181 l4 -2.5 M295 181 l4 1.5" stroke="#e8dcc0" stroke-width="1.4" stroke-linecap="round"/>
+              <!-- papo (som) -->
+              <ellipse class="trex-papo" cx="314" cy="146" rx="13" ry="9" fill="#d8b98a"/>
+              <!-- cabeça -->
+              <g class="trex-cabeca">
+                <path class="trex-mandibula" d="M320 128 L369 125 C373 127 372 132 367 134 C352 139 334 142 323 141 C314 140 313 132 320 128 Z" fill="#cdbb8b"/>
+                <path d="M304 106 C314 96 334 93 352 98 C364 101 374 106 378 114 C380 119 377 124 370 125 L324 130 C314 131 305 126 302 118 C300 112 301 108 304 106 Z" fill="#5c6b3c"/>
+                <path d="M326 129.5 C340 128.5 355 127.5 368 126" fill="none" stroke="#3d4728" stroke-width="1"/>
+                <path d="M318 100 L326 99 L320 112 Z M336 96 L344 96 L340 104 Z" fill="#3d4728"/>
+                <path d="M327 101 C330 96 336 95 340 98" fill="#3d4728"/>
+                <g class="trex-olho">
+                  <circle cx="339" cy="106" r="3.2" fill="#f2c14e"/>
+                  <ellipse cx="339.6" cy="106" rx=".9" ry="2.4" fill="#1b1b1b"/>
+                </g>
+                <ellipse cx="371" cy="111" rx="1.7" ry="1" fill="#2c3320"/>
+              </g>
+            </g>
+            <!-- plantas da frente -->
+            <path d="M8 290 C10 270 4 258 -4 252 M8 290 C14 272 24 264 34 262 M8 290 C20 278 34 276 42 280" stroke="#4b6142" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M392 290 C390 272 396 262 404 256 M392 290 C384 274 374 268 364 268" stroke="#4b6142" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+            <!-- comparação de tamanho -->
+            <g class="comparacao">
+              <g stroke="#1f2124" stroke-width="4.6" stroke-linecap="round" fill="none">
+                <path d="M330 222 L330 240 M330 240 L326 262 M330 240 L334 262 M330 226 L324 241 M330 226 L336 241"/>
+              </g>
+              <circle cx="330" cy="216.5" r="4.4" fill="#1f2124"/>
+              <text class="medida" x="340" y="214">você</text>
+              <text class="medida" x="340" y="225">1,75 m</text>
+              <path class="medida-linha" d="M22 279 L378 279 M22 275 L22 283 M378 275 L378 283"/>
+              <text class="medida" x="200" y="276" text-anchor="middle">≈ 12 metros</text>
+              <path class="medida-linha" d="M100 262 L100 155 M96 155 L104 155 M96 262 L104 262"/>
+              <text class="medida" x="94" y="212" text-anchor="end">≈ 4 m</text>
+            </g>
+
+            <!-- pontos para tocar -->
+            <g class="pontos">
+              <g class="ponto" data-info="cabeca" tabindex="0" role="button" aria-label="Cabeça e mordida" transform="translate(356 86)"><circle class="ponto-alvo" r="15"/><circle class="ponto-onda" r="8"/><circle class="ponto-miolo" r="5"/></g>
+              <g class="ponto" data-info="pele" tabindex="0" role="button" aria-label="Pele: escamas ou penas" transform="translate(206 104)"><circle class="ponto-alvo" r="15"/><circle class="ponto-onda" r="8"/><circle class="ponto-miolo" r="5"/></g>
+              <g class="ponto" data-info="bracos" tabindex="0" role="button" aria-label="Braços" transform="translate(302 196)"><circle class="ponto-alvo" r="15"/><circle class="ponto-onda" r="8"/><circle class="ponto-miolo" r="5"/></g>
+              <g class="ponto" data-info="pernas" tabindex="0" role="button" aria-label="Pernas e velocidade" transform="translate(180 230)"><circle class="ponto-alvo" r="15"/><circle class="ponto-onda" r="8"/><circle class="ponto-miolo" r="5"/></g>
+              <g class="ponto" data-info="cauda" tabindex="0" role="button" aria-label="Cauda" transform="translate(64 128)"><circle class="ponto-alvo" r="15"/><circle class="ponto-onda" r="8"/><circle class="ponto-miolo" r="5"/></g>
+            </g>
+          </svg>
+        </div>
+        <div class="trex-botoes">
+          <button class="btn-livro" id="trex-ficha" type="button"><span>Ficha</span></button>
+          <button class="btn-livro" id="trex-comparar" type="button" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20V8M20 20V4M4 20h16"/></svg>
+            <span>Comparar com você</span>
+          </button>
+          <button class="btn-livro" id="trex-som" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/></svg>
+            <span>Que som ele fazia?</span>
+          </button>
+        </div>
+        <div class="cartao" id="trex-info" aria-live="polite"></div>
+        <footer class="rodape"><span>10</span><span>Toque nos pontos brancos</span></footer>
+      </div>
+    </div>
+
+    <!-- 11 · A ERA DOS DINOSSAUROS (texto) -->
+    <div class="pagina pagina--papel era-mesozoico">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Capítulo 9 · A era dos dinossauros</p>
+        <h2 class="titulo">160 milhões de anos de dinossauros</h2>
+        <p>Os dinossauros surgiram há cerca de 233 milhões de anos e dominaram a terra firme durante quase todo o Mesozoico, a era dividida em três períodos.</p>
+        <div class="periodos" role="group" aria-label="Períodos do Mesozoico">
+          <button class="periodo" type="button" data-periodo="triassico" style="--c:#4f9fae" aria-pressed="false"><b>Triássico</b><span>252–201 mi</span></button>
+          <button class="periodo" type="button" data-periodo="jurassico" style="--c:#2e7d8c" aria-pressed="false"><b>Jurássico</b><span>201–145 mi</span></button>
+          <button class="periodo" type="button" data-periodo="cretaceo" style="--c:#1f5a66" aria-pressed="false"><b>Cretáceo</b><span>145–66 mi</span></button>
+        </div>
+        <p id="periodo-texto" aria-live="polite"></p>
+        <aside class="etiqueta" data-rotulo="Você sabia?">
+          <p>O T. rex viveu mais perto de nós no tempo do que do Estegossauro.</p>
+          <svg class="escala-dino" viewBox="0 0 300 58" role="img" aria-label="Linha do tempo em escala: Estegossauro há 150 milhões de anos, T. rex há 66 milhões, você hoje">
+            <line x1="10" y1="30" x2="290" y2="30" stroke="#1f2124" stroke-width="1.5"/>
+            <circle cx="27.5" cy="30" r="4" fill="#2e7d8c"/>
+            <circle cx="174.5" cy="30" r="4" fill="#2e7d8c"/>
+            <circle cx="290" cy="30" r="4" fill="#d6a935" stroke="#1f2124" stroke-width="1"/>
+            <text x="22" y="20">Estegossauro</text>
+            <text x="174.5" y="20" text-anchor="middle">T. rex</text>
+            <text x="292" y="20" text-anchor="end">você</text>
+            <path d="M29 40 L29 44 L173 44 L173 40" fill="none" stroke="#575a5f" stroke-width="1"/>
+            <path d="M176 40 L176 44 L288 44 L288 40" fill="none" stroke="#575a5f" stroke-width="1"/>
+            <text class="nota" x="101" y="55" text-anchor="middle">84 milhões de anos</text>
+            <text class="nota" x="232" y="55" text-anchor="middle">66 milhões</text>
+          </svg>
+        </aside>
+        <p>E eles não acabaram de todo: as aves são dinossauros. O pombo da praça é parente do T. rex.</p>
+        <footer class="rodape"><span>11</span><span>A era dos dinossauros</span></footer>
+      </div>
+    </div>
+
+    <!-- 12 · QUIZ -->
+    <div class="pagina pagina--papel era-cosmos">
+      <div class="pagina-conteudo">
+        <p class="cabeca-cap">Revisão</p>
+        <h2 class="titulo">Teste rápido</h2>
+        <p class="intro">Três perguntas sobre o que você viu até aqui.</p>
+        <div class="quiz">
+          <div class="quiz-q" data-certa="b" data-explica="O Universo tem 13,8 bilhões de anos. A Terra tem 4,54 bilhões: o Universo é três vezes mais velho.">
+            <p><span class="quiz-n">1</span>Há quanto tempo começou o Universo?</p>
+            <div class="quiz-ops">
+              <button type="button" data-op="a">4,5 bilhões de anos</button>
+              <button type="button" data-op="b">13,8 bilhões de anos</button>
+              <button type="button" data-op="c">100 bilhões de anos</button>
+            </div>
+            <p class="quiz-fb" aria-live="polite"></p>
+          </div>
+          <div class="quiz-q" data-certa="b" data-explica="Os destroços do choque com Theia entraram em órbita ao redor da Terra e se juntaram, formando a Lua.">
+            <p><span class="quiz-n">2</span>Pela hipótese mais aceita, como a Lua se formou?</p>
+            <div class="quiz-ops">
+              <button type="button" data-op="a">Foi capturada</button>
+              <button type="button" data-op="b">Numa colisão com Theia</button>
+              <button type="button" data-op="c">Saiu de um vulcão</button>
+            </div>
+            <p class="quiz-fb" aria-live="polite"></p>
+          </div>
+          <div class="quiz-q" data-certa="b" data-explica="As aves descendem de dinossauros e fazem parte do grupo. Pterossauros e plesiossauros eram répteis parentes, mas não dinossauros.">
+            <p><span class="quiz-n">3</span>Qual destes animais é um dinossauro?</p>
+            <div class="quiz-ops">
+              <button type="button" data-op="a">Pterossauro</button>
+              <button type="button" data-op="b">Galinha</button>
+              <button type="button" data-op="c">Plesiossauro</button>
+            </div>
+            <p class="quiz-fb" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="placar">
+          <p id="placar">Acertos: 0 de 3</p>
+          <button class="btn-livro" id="quiz-reiniciar" type="button"><span>Responder de novo</span></button>
+        </div>
+        <footer class="rodape"><span>12</span><span>Revisão</span></footer>
+      </div>
+    </div>
+
+    <!-- 13 · A VIAGEM CONTINUA -->
+    <div class="pagina pagina--papel era-cenozoico pag-fim">
+      <div class="pagina-conteudo">
+        <h2 class="titulo">A viagem continua</h2>
+        <p>Por enquanto, este livro traz os capítulos 1, 2 e 9. Nos próximos, a viagem passa pelas primeiras células, pela Explosão Cambriana, pelas florestas gigantes, pelo asteroide e pela longa caminhada até o <i>Homo sapiens</i>.</p>
+        <p class="nota-fontes">Datas segundo a Tabela Cronoestratigráfica Internacional (ICS). Valores arredondados.</p>
+        <svg class="trilha" id="trilha" viewBox="0 0 460 250" aria-hidden="true">
+          <defs>
+            <g id="pegada-dino" fill="#2e7d8c">
+              <ellipse cx="0" cy="3" rx="4.5" ry="5.5"/>
+              <path d="M0 0 L-8 -13 M0 0 L0 -17 M0 0 L8 -13" stroke="#2e7d8c" stroke-width="4.2" stroke-linecap="round"/>
+            </g>
+            <g id="pegada-humana" fill="#1f2124">
+              <path d="M-3 9 C-6 5 -5 -1 -3.5 -5 C-2.5 -9 -5.5 -12 -4 -15.5 C-2 -19 4 -19 5 -15 C6 -10 3 -6 3 0 C3 5 4 9 0 11 C-1 11.5 -2 11 -3 9 Z"/>
+              <circle cx="-2.6" cy="-21.5" r="1.7"/><circle cx="1" cy="-22.5" r="1.5"/><circle cx="3.8" cy="-21" r="1.3"/><circle cx="5.6" cy="-18.6" r="1.1"/>
+            </g>
+          </defs>
+          <g id="trilha-pegadas"></g>
+          <text class="trilha-rot" x="24" y="244">dinossauros</text>
+          <text class="trilha-rot" x="444" y="30" text-anchor="end">você</text>
+        </svg>
+        <footer class="rodape"><span>13</span><span>Antes de Nós</span></footer>
+      </div>
+    </div>
+
+    <!-- 14 · CONTRACAPA -->
+    <div class="pagina pagina--capa" data-density="hard">
+      <svg class="arte" viewBox="0 0 460 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="cc-ceu" cx="60%" cy="35%" r="85%">
+            <stop offset="0" stop-color="#1a2a4c"/><stop offset=".5" stop-color="#0c1428"/><stop offset="1" stop-color="#05070e"/>
+          </radialGradient>
+          <radialGradient id="cc-oceano" cx="36%" cy="34%" r="78%">
+            <stop offset="0" stop-color="#4aa6cf"/><stop offset=".55" stop-color="#1d5e88"/><stop offset="1" stop-color="#0b2a45"/>
+          </radialGradient>
+          <linearGradient id="cc-noite" x1="0" y1="0" x2="1" y2=".35">
+            <stop offset=".3" stop-color="#030711" stop-opacity="0"/><stop offset="1" stop-color="#030711" stop-opacity=".88"/>
+          </linearGradient>
+          <radialGradient id="cc-halo" cx="50%" cy="50%" r="50%">
+            <stop offset=".74" stop-color="#78c4ff" stop-opacity="0"/><stop offset=".79" stop-color="#78c4ff" stop-opacity=".45"/><stop offset="1" stop-color="#78c4ff" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="cc-lua" cx="35%" cy="35%" r="70%">
+            <stop offset="0" stop-color="#f1efe8"/><stop offset="1" stop-color="#8d8f94"/>
+          </radialGradient>
+          <clipPath id="cc-disco"><circle cx="300" cy="230" r="112"/></clipPath>
+        </defs>
+        <rect width="460" height="640" fill="url(#cc-ceu)"/>
+        <g data-estrelas="90" data-semente="21"></g>
+        <circle cx="300" cy="230" r="150" fill="url(#cc-halo)"/>
+        <circle cx="300" cy="230" r="112" fill="url(#cc-oceano)"/>
+        <g clip-path="url(#cc-disco)">
+          <path fill="#6f9f58" d="M220 170 C240 158 266 164 270 184 C274 202 256 210 262 228 C268 246 284 258 274 280 C266 298 248 302 240 286 C232 270 238 250 226 238 C214 226 206 208 210 190 C212 180 214 175 220 170 Z"/>
+          <path fill="#c4a865" d="M300 190 C314 178 338 180 352 188 C368 196 372 214 362 224 C354 232 340 228 332 238 C322 252 336 268 328 284 C320 298 304 294 298 280 C292 264 298 248 292 234 C286 220 288 200 300 190 Z"/>
+          <path fill="#7aa95f" d="M380 160 C396 152 410 160 412 176 C414 192 402 198 392 192 C382 186 372 170 380 160 Z"/>
+          <ellipse cx="300" cy="120" rx="60" ry="14" fill="#eef4f7" opacity=".9"/>
+        </g>
+        <circle cx="300" cy="230" r="112" fill="url(#cc-noite)"/>
+        <circle cx="300" cy="230" r="112" fill="none" stroke="#a6e0ff" stroke-opacity=".45" stroke-width="1.5"/>
+        <circle cx="120" cy="150" r="12" fill="url(#cc-lua)"/>
+      </svg>
+      <div class="contra-texto">
+        <p class="contra-frase">13,8 bilhões de anos. <em>Uma só história.</em></p>
+        <div class="estratos" aria-hidden="true">
+          <span style="--c:var(--c-hadeano);--t:540"></span><span style="--c:var(--c-arqueano);--t:1500"></span><span style="--c:var(--c-proterozoico);--t:1961"></span><span style="--c:var(--c-fanerozoico);--t:539"></span>
+        </div>
+        <p class="contra-pe">Antes de Nós · 2026</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</main>
+
+<nav class="navegacao" aria-label="Navegação do livro">
+  <button class="btn-seta" id="btn-ant" type="button" aria-label="Página anterior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <div class="indicador">
+    <span class="indicador-texto" id="indicador" aria-live="polite">Capa</span>
+    <div class="progresso" aria-hidden="true"><span id="progresso"></span></div>
+  </div>
+  <button class="btn-seta" id="btn-prox" type="button" aria-label="Próxima página">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+<script src="js/livro.js"></script>
+</body>
+</html>

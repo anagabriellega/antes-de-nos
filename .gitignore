@@ -1,0 +1,5 @@
+# Gerado por ferramentas/montar_arquivo_unico.py
+dist/
+
+__pycache__/
+.claude/settings.local.json
