@@ -4,7 +4,9 @@ Livro digital interativo sobre a história do Universo e da Terra, do Big Bang a
 
 Capítulos prontos: 1 (O Big Bang), 2 (Nasce a Terra) e 9 (A era dos dinossauros). O livro terá 12.
 
-## Como abrir
+**Ler online:** https://anagabriellega.github.io/antes-de-nos/
+
+## Como abrir no computador
 
 Abra `index.html` no navegador. É preciso internet para carregar as fontes e a biblioteca que vira as páginas ([StPageFlip](https://github.com/Nodlik/StPageFlip)).
 
